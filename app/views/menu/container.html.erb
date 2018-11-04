@@ -1,11 +1,15 @@
   <div class="row">
-    <div class="col-md" style="background-color: #ff0000;">
+    <%#
+      タブレット、PCの場合は一列に3要素を並べる(Max12のスペースに、4*3で一列)
+      モバイル端末の場合は、一列に1要素のみ配置(Max12のスペースに、12で一列)
+    %>
+    <div class="col-md-4 col-sm-12" style="background-color: #ff0000;">
       コンテンツA
     </div>
-    <div class="col-md" style="background-color: #ffff00;">
-      コンテンツA
+    <div class="col-md-4 col-sm-12" style="background-color: #ffff00;">
+      コンテンツB
     </div>
-    <div class="col-md" style="background-color: #00ff00;">
-      コンテンツA
+    <div class="col-md-4 col-sm-12" style="background-color: #00ff00;">
+      コンテンツC
     </div>
   </div>
