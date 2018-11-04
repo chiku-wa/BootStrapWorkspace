@@ -1,10 +1,15 @@
-<div class="container">
   <div class="row">
-    <%= link_to "containerサンプル", {action: :container} %>
+    <%#
+      lg(992px 以上、主にタブレットやPC)の場合は一列に3要素を並べる(Max12のスペースに、4*3で一列)
+      sm(768px 未満、主にモバイル端末)の場合は、一列に1要素のみ配置(Max12のスペースに、12で一列)
+    %>
+    <div class="col-lg-4 col-sm-12" style="background-color: #ff0000;">
+      コンテンツA
+    </div>
+    <div class="col-lg-4 col-sm-12" style="background-color: #ffff00;">
+      コンテンツB
+    </div>
+    <div class="col-lg-4 col-sm-12" style="background-color: #00ff00;">
+      コンテンツC
+    </div>
   </div>
-
-  <div class="row">
-    <%= link_to "container_fluidサンプル", {action: :container_fluid} %>
-  </div>
-</div>
-

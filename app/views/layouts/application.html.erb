@@ -10,17 +10,21 @@
   </head>
 
   <body>
-    <header>
-    </header>
 
-    <div class="container-fluid">
+    <div class="container">
+
+      <header>
+      </header>
+
       <%= yield %>
+
+      <footer>
+        <hr />
+        <%= link_to "トップへ戻る", {action: :index} %>
+      </footer>
+
     </div>
 
-    <footer>
-      <hr />
-      <%= link_to "トップへ戻る", {action: :index} %>
-    </footer>
   </body>
 
 </html>
