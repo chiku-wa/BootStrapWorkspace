@@ -9,10 +9,18 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <header>
-  </header>
-
   <body>
-    <%= yield %>
+    <header>
+    </header>
+
+    <div class="container-fluid" style="background-color: #ff00ff;">
+      <%= yield %>
+    </div>
+
+    <footer>
+      <hr />
+      <%= link_to "トップへ戻る", {action: :index} %>
+    </footer>
   </body>
+
 </html>
